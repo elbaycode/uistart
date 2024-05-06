@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/my_nav" />
+
+
+
+
+    <ImageView
+        android:id="@+id/avatar1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address1"
+        app:layout_constraintStart_toEndOf="@+id/avatar1"
+        app:layout_constraintTop_toTopOf="@+id/avatar1" />
+
+
+
+    <TextView
+        android:id="@+id/address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar1"
+        app:layout_constraintStart_toStartOf="@+id/title1"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+
+    <ImageView
+        android:id="@+id/avatar2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar2"
+        app:layout_constraintStart_toStartOf="@+id/title2"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address2"
+        app:layout_constraintStart_toEndOf="@+id/avatar2"
+        app:layout_constraintTop_toTopOf="@+id/avatar2" />
+
+
+    <ImageView
+        android:id="@+id/avatar3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address3"
+        app:layout_constraintStart_toEndOf="@+id/avatar3"
+        app:layout_constraintTop_toTopOf="@+id/avatar3" />
+
+
+
+    <TextView
+        android:id="@+id/address3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar3"
+        app:layout_constraintStart_toStartOf="@+id/title3"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+
+    <ImageView
+        android:id="@+id/avatar4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address4"
+        app:layout_constraintStart_toEndOf="@+id/avatar4"
+        app:layout_constraintTop_toTopOf="@+id/avatar4" />
+
+
+
+    <TextView
+        android:id="@+id/address4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar4"
+        app:layout_constraintStart_toStartOf="@+id/title4"
+        app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+
+    <ImageView
+        android:id="@+id/avatar5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address5"
+        app:layout_constraintStart_toEndOf="@+id/avatar5"
+        app:layout_constraintTop_toTopOf="@+id/avatar5" />
+
+
+
+    <TextView
+        android:id="@+id/address5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar5"
+        app:layout_constraintStart_toStartOf="@+id/title5"
+        app:layout_constraintTop_toBottomOf="@+id/title5" />
+
+
+    <ImageView
+        android:id="@+id/avatar6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATL_UNEC"
+        app:layout_constraintBottom_toTopOf="@+id/address6"
+        app:layout_constraintStart_toEndOf="@+id/avatar6"
+        app:layout_constraintTop_toTopOf="@+id/avatar6" />
+
+
+
+    <TextView
+        android:id="@+id/address6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAKI/Yasamal"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar6"
+        app:layout_constraintStart_toStartOf="@+id/title6"
+        app:layout_constraintTop_toBottomOf="@+id/title6" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
